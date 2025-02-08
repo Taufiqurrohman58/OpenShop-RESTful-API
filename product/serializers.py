@@ -15,7 +15,7 @@ class ProductSerializer(serializers.ModelSerializer):
         return [
             {
                 "rel": "self",
-                "href": reverse('product-list', request=request),  # Ubah ke 'product-list'
+                "href": reverse('product-list', request=request), 
                 "action": "POST",
                 "types": ["application/json"]
             },
